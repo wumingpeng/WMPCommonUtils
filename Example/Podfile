@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WMPCommonUtils_Example' do
+  pod 'WMPCommonUtils', :path => '../'
+
+  target 'WMPCommonUtils_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
