@@ -1,0 +1,6 @@
+framework module Pods_WMPCommonUtils_Example {
+  umbrella header "Pods-WMPCommonUtils_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

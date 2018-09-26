@@ -23,7 +23,9 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		96E0FFC5EFC5CF0F4923190C /* Pods_WMPCommonUtils_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068BC2031FF662522B4D5DA8 /* Pods_WMPCommonUtils_Example.framework */; };
-		DBC26C834CD2FD614177BC05 /* Pods_WMPCommonUtils_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39B90CF9A195DC4278FF827 /* Pods_WMPCommonUtils_Tests.framework */; };
+		DA324F5F215B6DAD00491089 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = DA324F56215B6DAD00491089 /* .gitkeep */; };
+		DA324F60215B6DAD00491089 /* BHUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DA324F58215B6DAD00491089 /* BHUtils.m */; };
+		DA324F61215B6DAD00491089 /* GlobalFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DA324F5A215B6DAD00491089 /* GlobalFunction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +40,7 @@
 
 /* Begin PBXFileReference section */
 		068BC2031FF662522B4D5DA8 /* Pods_WMPCommonUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMPCommonUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		29135CD0FE96AA06C3C51ADC /* Pods-WMPCommonUtils_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMPCommonUtils_Tests.release.xcconfig"; path = "Target Support Files/Pods-WMPCommonUtils_Tests/Pods-WMPCommonUtils_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		32E2C358C58781CAF83E3BB6 /* Pods-WMPCommonUtils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMPCommonUtils_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WMPCommonUtils_Tests/Pods-WMPCommonUtils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3D5D7F19E86BCFE4E6ACEAD9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3D5D7F19E86BCFE4E6ACEAD9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5834D7170AF55594F241D2D4 /* Pods-WMPCommonUtils_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMPCommonUtils_Example.release.xcconfig"; path = "Target Support Files/Pods-WMPCommonUtils_Example/Pods-WMPCommonUtils_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5B63F69B43A99A2EE9FB8ED7 /* Pods-WMPCommonUtils_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMPCommonUtils_Example.debug.xcconfig"; path = "Target Support Files/Pods-WMPCommonUtils_Example/Pods-WMPCommonUtils_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* WMPCommonUtils_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMPCommonUtils_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,10 +63,16 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7A1E791AEA1538590ED4B1D2 /* WMPCommonUtils.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WMPCommonUtils.podspec; path = ../WMPCommonUtils.podspec; sourceTree = "<group>"; };
+		7A1E791AEA1538590ED4B1D2 /* WMPCommonUtils.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WMPCommonUtils.podspec; path = ../WMPCommonUtils.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A39B90CF9A195DC4278FF827 /* Pods_WMPCommonUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMPCommonUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA863761C036417B650B5064 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BA863761C036417B650B5064 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DA324F56215B6DAD00491089 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		DA324F57215B6DAD00491089 /* BHUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHUtils.h; sourceTree = "<group>"; };
+		DA324F58215B6DAD00491089 /* BHUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHUtils.m; sourceTree = "<group>"; };
+		DA324F59215B6DAD00491089 /* GlobalFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalFunction.h; sourceTree = "<group>"; };
+		DA324F5A215B6DAD00491089 /* GlobalFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalFunction.m; sourceTree = "<group>"; };
+		DA324FD7215B6E9400491089 /* GlobalToolMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalToolMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +94,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				DBC26C834CD2FD614177BC05 /* Pods_WMPCommonUtils_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,10 +105,7 @@
 			children = (
 				5B63F69B43A99A2EE9FB8ED7 /* Pods-WMPCommonUtils_Example.debug.xcconfig */,
 				5834D7170AF55594F241D2D4 /* Pods-WMPCommonUtils_Example.release.xcconfig */,
-				32E2C358C58781CAF83E3BB6 /* Pods-WMPCommonUtils_Tests.debug.xcconfig */,
-				29135CD0FE96AA06C3C51ADC /* Pods-WMPCommonUtils_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,6 +146,7 @@
 		6003F593195388D20070C39A /* Example for WMPCommonUtils */ = {
 			isa = PBXGroup;
 			children = (
+				DA324F55215B6DAD00491089 /* Classes */,
 				6003F59C195388D20070C39A /* WMPAppDelegate.h */,
 				6003F59D195388D20070C39A /* WMPAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -197,6 +200,20 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		DA324F55215B6DAD00491089 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DA324F56215B6DAD00491089 /* .gitkeep */,
+				DA324FD7215B6E9400491089 /* GlobalToolMacro.h */,
+				DA324F57215B6DAD00491089 /* BHUtils.h */,
+				DA324F58215B6DAD00491089 /* BHUtils.m */,
+				DA324F59215B6DAD00491089 /* GlobalFunction.h */,
+				DA324F5A215B6DAD00491089 /* GlobalFunction.m */,
+			);
+			name = Classes;
+			path = ../../WMPCommonUtils/Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,7 +225,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				5B7E834166181E6260D99143 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,7 +239,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "WMPCommonUtils_Tests" */;
 			buildPhases = (
-				9A8B6B645AA3D0CD2D1471CE /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
@@ -279,6 +294,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				DA324F5F215B6DAD00491089 /* .gitkeep in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -295,66 +311,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5B7E834166181E6260D99143 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WMPCommonUtils_Example/Pods-WMPCommonUtils_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/WMPCommonUtils/WMPCommonUtils.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WMPCommonUtils.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WMPCommonUtils_Example/Pods-WMPCommonUtils_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6B468A308D57C33B5B3CDE53 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-WMPCommonUtils_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9A8B6B645AA3D0CD2D1471CE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WMPCommonUtils_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -371,6 +339,8 @@
 				6003F59E195388D20070C39A /* WMPAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* WMPViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				DA324F60215B6DAD00491089 /* BHUtils.m in Sources */,
+				DA324F61215B6DAD00491089 /* GlobalFunction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,7 +495,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32E2C358C58781CAF83E3BB6 /* Pods-WMPCommonUtils_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -549,7 +518,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29135CD0FE96AA06C3C51ADC /* Pods-WMPCommonUtils_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
