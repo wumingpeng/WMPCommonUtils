@@ -26,6 +26,7 @@
 		DA324F5F215B6DAD00491089 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = DA324F56215B6DAD00491089 /* .gitkeep */; };
 		DA324F60215B6DAD00491089 /* BHUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DA324F58215B6DAD00491089 /* BHUtils.m */; };
 		DA324F61215B6DAD00491089 /* GlobalFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DA324F5A215B6DAD00491089 /* GlobalFunction.m */; };
+		DA325049215B725200491089 /* BHProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DA325047215B725200491089 /* BHProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		DA324F59215B6DAD00491089 /* GlobalFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalFunction.h; sourceTree = "<group>"; };
 		DA324F5A215B6DAD00491089 /* GlobalFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalFunction.m; sourceTree = "<group>"; };
 		DA324FD7215B6E9400491089 /* GlobalToolMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalToolMacro.h; sourceTree = "<group>"; };
+		DA325047215B725200491089 /* BHProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHProgressHUD.m; sourceTree = "<group>"; };
+		DA325048215B725200491089 /* BHProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHProgressHUD.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +212,8 @@
 				DA324F58215B6DAD00491089 /* BHUtils.m */,
 				DA324F59215B6DAD00491089 /* GlobalFunction.h */,
 				DA324F5A215B6DAD00491089 /* GlobalFunction.m */,
+				DA325048215B725200491089 /* BHProgressHUD.h */,
+				DA325047215B725200491089 /* BHProgressHUD.m */,
 			);
 			name = Classes;
 			path = ../../WMPCommonUtils/Classes;
@@ -225,6 +230,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				1891893F01DC2D5EE6549168 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,6 +317,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1891893F01DC2D5EE6549168 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WMPCommonUtils_Example/Pods-WMPCommonUtils_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WMPCommonUtils_Example/Pods-WMPCommonUtils_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6B468A308D57C33B5B3CDE53 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA325049215B725200491089 /* BHProgressHUD.m in Sources */,
 				6003F59E195388D20070C39A /* WMPAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* WMPViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
