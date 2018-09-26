@@ -1,5 +1,4 @@
 use_frameworks!
 
 target 'WMPCommonUtils_Example' do
-
 end
